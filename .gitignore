@@ -1,0 +1,3 @@
+node_modules/
+.env
+#these are the two which i want to ignore
