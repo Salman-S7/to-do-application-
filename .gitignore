@@ -1,3 +1,4 @@
 node_modules/
+dist/
 .env
 #these are the two which i want to ignore
