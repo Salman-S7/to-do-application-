@@ -1,8 +1,7 @@
-
-const express = require('express');
-const jwt = require('jsonwebtoken');
-const {User} = require('../db/database');
-const {SECRET} = require('../middlewares/authMiddleware');
+import express from'express';
+import jwt from 'jsonwebtoken';
+import {User} from '../db/database';
+import {SECRET}  from '../middlewares/authMiddleware';
 const router = express.Router();
 
 router.post('/signup',async(req,res)=>{
@@ -31,4 +30,4 @@ router.post('/login', async (req,res)=>{
         res.status(401).json({error: "Invalid creadentials"});
     }
 })
-module.exports = router;
+export default router;
